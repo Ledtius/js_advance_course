@@ -59,12 +59,17 @@ console.log("End of the line");
 
 /* Count */
 /* Is to count count the number of the function was call */
-const login = () => {
-  console.count();
+const login = (user = "Guest") => {
   console.warn("Account Joined!");
+
+  console.group("Count");
+  console.count(user);
+  console.count();
+  console.groupEnd();
 };
 
 login();
-login();
-login();
-login();
+login("Calet");
+login("Calet");
+login("Ronald");
+login("Jeferson");
