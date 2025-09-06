@@ -73,3 +73,25 @@ login("Calet");
 login("Calet");
 login("Ronald");
 login("Jeferson");
+
+/* Time and timeEnd */
+/* To measure the time in a specific block of code */
+console.time("Loop");
+
+for (let i = 0; i < 1000000; i++) {
+  /* Something */
+}
+
+console.log("µ");
+
+console.timeEnd("Loop");
+
+/* Assert */
+/* Print a error if the condition is false */
+
+const ageVerification = (age = 18) => {
+  console.assert(age >= 18, `Error: invalid age ${age}`);
+};
+
+ageVerification(12);
+ageVerification(23);
