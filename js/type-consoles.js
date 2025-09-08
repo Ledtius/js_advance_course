@@ -1,5 +1,10 @@
 /* Practice types of consoles */
 
+const x = 10;
+const y = 11;
+const z = 12;
+const zyx = 13;
+
 /* Log, Warn and Error */
 const receiveNumber = (num = 1) => {
   if (num > 0) console.log(num);
@@ -95,3 +100,16 @@ const ageVerification = (age = 18) => {
 
 ageVerification(12);
 ageVerification(23);
+
+console.log(
+  "%cError:%c Este es un mensaje crítico",
+  "color: white; background: red; padding: 4px; font-weight: bold;",
+  "color: black; background: yellow; padding: 4px;"
+);
+
+console.log(
+  "%c🚀 Bienvenido %cUsuario %cPro!",
+  "color: white; background: green; padding: 4px; border-radius: 4px;",
+  "color: blue; font-size: 16px; font-weight: bold;",
+  "color: orange; text-shadow: 1px 1px 2px black;"
+);
